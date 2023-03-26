@@ -204,10 +204,6 @@ body{
         transform: scale(1.5);
     
     }
-    .loginwrap{
-        margin-top: 15vh;
-
-    }
     .wrapper .form-box.login .icon-close{
         position: absolute;
         top: 0;
@@ -257,10 +253,7 @@ body{
         transform: scale(1);
     
     }
-    .loginwrap{
-        margin-top: 15vh;
-
-    }
+    
     .wrapper .form-box.login .icon-close{
         position: absolute;
         top: 0;

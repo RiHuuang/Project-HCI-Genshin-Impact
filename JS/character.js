@@ -77,7 +77,7 @@ maps.addEventListener('click', function(){
     if(count % 2 == 1) {
         mapsnav.style.display = "flex";
     } else {
-        if (window.innerWidth > 350) {
+        if (window.innerWidth > 400) {
             mapsnav.style.display = "flex";
         }
         mapsnav.style.display = "none";
@@ -85,7 +85,7 @@ maps.addEventListener('click', function(){
 });
 
 window.addEventListener('resize', function() {
-    if (count % 2 == 0 && window.innerWidth > 350) {
+    if (count % 2 == 0 && window.innerWidth > 400) {
         mapsnav.style.display = "flex";
     }
 });

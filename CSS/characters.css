@@ -317,7 +317,8 @@ section .description .desc #bullet{
 
 .charkecil img{
     width: 100%;
-    /* height: 70%; */
+    height: 70%;
+    object-fit: cover;
 }
 
 .charkecil .namachar{
@@ -332,191 +333,198 @@ section .description .desc #bullet{
     text-align: center;
 }
 
-@media screen and (max-width : 850px){
+@media only screen and (max-width : 850px){
     #bg{
-        /* height: 50vh; */
+        height: 100vh;
         width: 100%;
         object-fit: cover;
     }
 
     .backdrop{
-        align-self: start;
-        height: 100vh;
+        background-position-x: 50%;
+        background-size: cover;
+        /* object-fit: cover; */
     }
 
     .container{
-        width: 100%;
-        height: 100vh;
-    }
-
-    .carousel{   
-        z-index: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        position: relative;
-        justify-content: flex-start;
-        overflow: hidden;
-    }
-
-    .slider{
-        display: flex;
         height: 100%;
-        width: 300%;
-        /* position: flex; */
-        flex-shrink: 0;
-        transition: all 0.5s;
-        align-items: end;
     }
 
-    .slider section{
-        width: 100vw;
+    .carousel{
         height: 100vh;
-        flex: 1;
-        justify-content: end;
-        align-items: end;
-    }
-
-    .slider section img{
-        /* margin-left: 0; */
-        width: 75vw;
-        max-height: 90vh;
-        object-fit: cover;
         overflow: visible;
     }
 
     .mapsnav{
-        display: flex;
-        align-self: center;
-        position: absolute;
-        z-index: 5;
-        width: 20%;
-        height: 10%;
-        display: flex;
-        justify-content: space-between;
+        display: none;
+        align-self: end;
         align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .mapsnav li{
-        display: flex;
+        justify-content: center;
+        margin-bottom: 15%;
         width: 100%;
-        height: 8vh;
-        font-family: 'Tahoma';
-        align-items: center;
+        height: max-content;
+        background-color: #000000bb;
     }
 
     .mapsnav ul{
-        justify-content: start;
-        align-items: center;
-        align-self: center;
-        /* margin-left:30px; */
-        width: 100%;
-        height: 100%;
+        padding: 10px 0;
+    }
+
+    .mapsnav img{
+        display: none;
     }
 
     .mapsnav a{
-        max-height: 100%;
-        width: 100%;
-        color: white;
-        text-decoration: none;    
-        align-items: center;
-    }
-
-    /*  */
-    .mapsnav .active{
-        /* width: 100%; */
-        /* display: flex; */
-        padding-left: 70px;
-        background-size: cover;
-        background-image: url("Assets/Assets-cyn/char\ menu\ active.png");
+        height: 20%;
     }
 
     .mapsnav .notactive a{
-        /* width: 100%; */
-        display: flex;
-        flex-direction: row;
-        margin-left: 5.3%;
+        margin-left: 0 ;
+        width: 100%;
     }
 
-    .maps-control{
-        display: none;
-        flex-direction: row;
-        height: 5%;
+    .mapsnav li{
+        font-size: 2em;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mapsnav .active{
+        padding: 0%;
+        background: rgba(21, 123, 206, 0.806);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapsnav .notactive{
+        height: max-content;
+        width: 100%;
+    }
+
+    .slider{
+        margin-left: 0%;
+        justify-content: start;
+        align-items: end;
+        height: 100vh;
+        width: 300%;
+        overflow: visible;
+    }
+
+    .slider section{
+        /* flex-basis: 30%; */
+        width: 100vw;
+        height: 100vh;
+        justify-content: start;
+        align-items: end;
+        /* flex-shrink: 0; */
+        flex: 1;
+        display: flex;
+        /* overflow: visible; */
+    }
+    
+    .slider section img{
+        margin-left: 20%;
+        max-height: 100%;
+        width: 60vw;
+        object-fit: cover;
+        object-position: 50%;
+        overflow: visible;
+    }
+
+    #shogun{
+        object-position: 40%;
+    }
+
+    .controls{
+        margin-bottom: 15%;
+        height: 10%;
+    }
+
+    #prev{
+        margin-left: 20%;
+        height: 50%;
+    }
+
+    #next{
+        margin-right: 20%;
+        height: 50%;
+    }
+
+    .controls .charkecil{
+        width: 9%;
+        height: 90%;
+        font-size: 1.5em;
+    }
+
+    .namachar{
+        font-size: 0.5em;
+    }
+
+    .description #nameinazuma{
+        width: 30%;
+        font-size: 4em;
+    }
+    
+    .description #nameliyue{
+        font-size: 5.5em;
     }
 
     section .description{
-        margin-left: 300px;
-        margin-top: 150px;
-        width: 40%;
-        height: 60%;
-        position: absolute;
-        z-index: 5;
-        display: flex;
-        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding-top: 35vh;
+        margin-left: 60px;
         justify-content: flex-start;
-        align-items: start;
-        /* background-color: red; */
-        /* overflow: hidden; */
     }
 
-    .desc ::-webkit-scrollbar {
-        width: 0.3em;
-        height: max-content;
+    section .description .desc{
+        padding: calc(100vh/70);
+        margin-top:calc(100vh / 55);
+        max-height: 20%;
+        font-size: 1.1em;
+
     }
 
-    .desc ::-webkit-scrollbar-track {
-        background-color: #d9d9d922;
-        border-radius: 50em;
-        margin-block: 0.5em;
+    section .description .desc #bullet{
+        width: 20%;
+        max-height: 20%;
+    }
+    
+    .desc p{
+        margin-left: 10px;
     }
 
-    .desc ::-webkit-scrollbar-thumb {
-        background-color: #d9d9d9bb;
-        border-radius: 50em;
+    #button{
+        display: none;
     }
 
+    .description #name{
+        font-size: 5em;
+    }
+    
     section .description .va{
-        /* width: 85%;
-        height : 13%; */
-        
-        /* stabilin */
-        width: 40vw;
-        height: 8vh;
-        /* overflow: hidden;     */
-        justify-content: start;
-        /* position: absolute; */
-        align-items: center;
-        display: flex;
-    }
-
-    section .description .va .va-reg #button{
         margin-left: 0%;
-        /* display:none; */
-        /* width: 10%; */
-    }
-
-    .va-reg{
-        margin-left: 10%;
+        width: 70vw;
+        height: 10%;
     }
 
     .va .vaname{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         width: 60%;
         height: 100%;
-        background-color: #CDA574;
     }
 
     section .vaname img{
-        margin: 0;
-        height: 100%;    
+        margin-left: 0%;
+        height: 100%;
+        max-width: min-content;
+        object-fit: cover;
     }
 
     .vaname p{
         /* padding: auto auto; */
         overflow: hidden;
+        font-size: 1.3em;
         width: 73%;
         font-family: 'Tahoma';
     }
@@ -525,128 +533,38 @@ section .description .desc #bullet{
         margin-left: 10px;
         height: 60%;
     }
-
-    .description #name{
-        text-shadow: 2px 2px 8px black;
-        height: max-content;
-        font-family: 'Cinzel Decorative', cursive;
-        font-size: 4.5em;
-        font-weight: bold;
-        text-align: left;
-        color: white;
-    }
-
-    .description #nameinazuma{
-        text-shadow: 2px 2px 8px black;
-        height: max-content;
-        font-family: 'Asul', sans-serif;
-        font-size: 3em;
-        margin-bottom: 10px;
-        text-align: left;
-        color: white;
-    }
-
-    .description #nameliyue{
-        text-shadow: 2px 2px 8px black;
-        height: max-content;
-        font-family: 'Alatsi', sans-serif;
-        font-size: 4em;
-        text-align: left;
-        color: white;
-    }
-
-    section .description .desc{
-
-        padding: calc(100vh/50);
+    
+    .maps-control{
+        margin-bottom: 3%;
+        z-index: 5;
+        background: #000000aa;
         display: flex;
         flex-direction: row;
-
-        margin-top:calc(100vh / 25);
-        /* max-width: 90%; */
-        /* height: 200px; */
-        max-height: 28%;
-        width: 400px;
-
-        background-color: #000000aa;
-        /* overflow: hidden; */
-        /* overflow-x: auto; */
-    }
-
-    section .description .desc #bullet{
-        margin-left: 0;
-        width:20%;
-        max-height: 20%;
-    }
-
-    .desc p{
-        /* height: 90%; */
-        overflow-y: auto;
-        font-family: 'Tahoma';
-        margin-left: 20px;
-        color: white;
-        scroll-behavior: smooth;
-    }
-
-    /* controls */
-    .controls{
-        background-color: #d9d9d950;
-        width: 100%;
-        height: 25%;
-        display: flex;
+        height: 5%;
         position: absolute;
-        z-index: 5;
-        justify-content: space-between;
         align-items: center;
         align-self: flex-end;
-    }
-
-    #prev{
-        cursor: pointer;
-        margin-left: calc(100vw / 4);
-        height: 10vh;
-        display: flex;
-    }
-
-    #next{
-        cursor: pointer;
-        margin-right: calc(100vw / 4);
-        height: 10vh; 
-        display: flex;
-        transform: scale(-1,-1);
-    }
-
-    .controls .charkecil{
-        width: 7%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        /* padding: 10px; */
-        background-color: #000000aa;
-        border-radius: 10px;
-        justify-content: flex-start;
-        align-items: center;
-        overflow-x: hidden;
-    }
-
-    .charkecil img{
-        width: 100%;
-        /* height: 70%; */
-    }
-
-    .charkecil .namachar{
-        font-family: Tahoma;
-        background-color: black;
-        color: white;
-        display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100%;
         width: 100%;
-        text-align: center;
     }
+
+    .maps-control p{
+        font-family: 'Tahoma';
+        text-align: center;
+        width: 40%;
+        color: white;
+        font-size: 2em;
+    }
+
+    .maps-control img{
+        transform: rotate(90deg);
+        height: 50%;
+        max-width: 5%;
+    }
+
 }
 
-@media screen and (max-width : 400px){
+@media only screen and (max-width : 400px){
     #bg{
         height: 100vh;
         width: 100%;
@@ -737,9 +655,9 @@ section .description .desc #bullet{
     .slider section img{
         margin-left: 20%;
         max-height: 100%;
-        width: 75vw;
+        width: 50vw;
         object-fit: cover;
-        object-position: 55%;
+        object-position: 45%;
         overflow: visible;
     }
 
@@ -760,10 +678,11 @@ section .description .desc #bullet{
 
     .controls .charkecil{
         width: 10%;
+        height: 90%;
     }
 
     .namachar{
-        font-size: 0.5em;
+        font-size: 0.3em;
     }
     
     .description #name{
@@ -772,7 +691,7 @@ section .description .desc #bullet{
 
     .description #nameinazuma{
         width: 30%;
-        
+        font-size: 2.5em;
     }
 
     .description #namesumeru{
@@ -782,7 +701,7 @@ section .description .desc #bullet{
     section .description{
         height: 100%;
         width: 100%;
-        padding-top: 50vh;
+        padding-top: 45vh;
         margin-left: 20px;
         justify-content: flex-start;
     }
@@ -851,6 +770,7 @@ section .description .desc #bullet{
         text-align: center;
         width: 40%;
         color: white;
+        font-size: 1em;
     }
 
     .maps-control img{

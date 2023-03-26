@@ -198,6 +198,10 @@ body{
         background-position: center;
     }
 
+    .loginwrap{
+        margin-top: 0;
+    }
+    
     .wrapper{
         width: 400px;
         height: 440px;
@@ -252,6 +256,9 @@ body{
         height: 440px;  
         transform: scale(1);
     
+    }
+    .loginwrap{
+        margin-top: 0;
     }
     
     .wrapper .form-box.login .icon-close{

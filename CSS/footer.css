@@ -1,0 +1,154 @@
+.footer{
+    background-color: #000000;
+	margin-bottom: 0;
+	width: 100%;
+	min-height: fit-content;
+	margin:  auto;
+	align-items: center;
+	justify-content: center;
+	display: block;
+	overflow: hidden;
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 3vh;
+    
+}
+
+.logo-footer img{
+    width: 157px;    
+}
+
+.text-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.text-footer li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: antiquewhite;
+    opacity: .3;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    /* font-weight: light; */
+}
+
+.text-footer li{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.text-footer li a:hover{
+    opacity: 1;
+}
+
+.teen-esrb-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3vh;
+}
+
+.teen-esrb-footer img{
+    width: 120px;    
+}
+
+.hoyoverse-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 2vh;
+    
+}
+
+.hoyoverse-footer img{
+    width: 200px;
+}
+
+.copyright-footer{
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding-top: 3vh;
+    margin-bottom: 25px;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    opacity: .8;
+}
+
+@media screen and (max-width : 400px){
+    .text-footer li a{
+        font-size: 0.6em;
+    }
+
+    .text-footer li{
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    .logo-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        padding-top: 3vh;
+        
+    }
+    
+    .logo-footer img{
+        width: 127px;    
+    }
+    
+    .text-footer ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .text-footer li a:hover{
+        opacity: 1;
+    }
+    
+    .teen-esrb-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1vh;
+    }
+    
+    .teen-esrb-footer img{
+        width: 100px;    
+    }
+    
+    .hoyoverse-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding-top: 2vh;
+        
+    }
+    
+    .hoyoverse-footer img{
+        width: 200px;
+    }
+    
+    .copyright-footer{
+        font-size: 0.8em;
+        padding: 20px;
+        color: white;
+        justify-content: center;
+        display: flex;
+        padding-top: 3vh;
+        margin-bottom: 18px;
+        font-family: Tahoma, Helvetica, Arial, sans-serif;
+        opacity: .8;
+    }
+    
+}

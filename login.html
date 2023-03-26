@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenshin Impekz</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+    
+</head>
+<body>
+    <div class="loginbg"></div>
+    <div class = "nav">
+        <div id = "navBar">
+            <img src="CSS/Assets/logoGenshin (2).png">
+            <div id = "navMenu">
+                <ul>
+                    <a href="index.html"><li id="home">Home</li></a>
+                    <a href="news.html"><li id="news">News</li></a>
+                    <a href="characterMonstadt.html"><li id="char">Characters</li></a>
+                    <a href="maps.html"><li id="explore">Maps</li></a>
+                    <a href="AboutGame.html"><li id="hoyolab">About Game</li></a>
+                    
+                </ul>
+                <a href="login.html"><li id="logon">Login</li></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="loginwrap">
+        <div class="login">
+            <div class="wrapper">
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <!-- <span class="icon"></span> -->
+                            <input type="text" id="inputUserLogin" required >
+                            <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                            <!-- <span class="icon"></span>-->
+                             <input type="password" id="inputPasswordLogin" required >
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="" id="remember">Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn" id="login-btn">Login</button>
+                        <div id="loginError"></div>
+                        <div class="login-register">
+                            <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-box register">
+                    <h2>Register</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <!-- <span class="icon"></span> -->
+                            <input type="text" id="inputUser" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                            <!-- <span class="icon"></span> -->
+                            <input type="email" id="inputEmail" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <!-- <span class="icon"></span> -->
+                            <input type="password" id="inputPassword" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="input-box"> 
+                            <!-- <span class="icon"></span> -->
+                            <input type="password" id="confirmpass" required>
+                            <label>Confirm Password</label>
+                        </div>
+                        <div class="input-box"> 
+                            <!-- <span class="icon"></span> -->
+                            <input type="number" id="inputAge" required>
+                            <label>Age</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" name="" id="tnc">Accept T&C</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn" id="register-btn">Register</button>
+                        <div id="registerError"></div>
+                        <div class="login-register">
+                            <p>Already account?<a href="#" class="login-link">login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="CSS/Assets/logoGenshin (2).png" alt="">
+        </div>
+        <div class="text-footer">
+            <ul>
+                <li><a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a></li>
+                <li><a href="https://genshin.hoyoverse.com/en/company/terms">Terms of Service</a></li>
+                <li><a href="https://www.hoyoverse.com/about-us?utm_source=genshin&utm_medium=footer">About Us</a></li>
+                <li><a href="genshin_cs@hoyoverse.com">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="teen-esrb-footer">
+            <img src="CSS/Assets/Footer/teen esrb.png" alt="">
+        </div>
+        <div class="hoyoverse-footer">
+            <img src="CSS/Assets/Footer/HoyoVerse.png" alt="">
+        </div>
+        <div class="copyright-footer"><p>Copyright © RICHARD CYNTHIA. All Rights Served</p></div>
+        
+    </div>
+    
+    <script src="JS/login.js"></script>
+    <script src="JS/navscroll.js"></script>
+</body>
+</html>

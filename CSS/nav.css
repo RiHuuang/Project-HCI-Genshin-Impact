@@ -1,0 +1,200 @@
+*{
+    /* background-color: #cf3434; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav{
+    /* border: 1px solid red; */
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.600);
+    position: fixed;
+    top: 0;
+    max-width: 100vw;
+    width: 100vw;
+    height: 14vh; 
+    /* ini tuh tingginya si bar item menu yang diatas */
+    margin: 0;
+    font-family: Tahoma;
+    transition: transform 0.2s;  
+    
+    /* padding: 5px; */
+}
+
+.nav--hidden{
+    transform: translateY(-130px);
+    box-shadow:  none;
+}
+
+/* ini isinya gambar logo "genshin" */
+#navBar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* margin-left: 2vw; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navBar #navMenu{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#navMenu ul{
+    height: 14vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+    margin-right: 5%;
+    /* box-sizing: border-box; */
+    /* font-family : HyWenHei; */
+}
+
+/* menu bar nya ini */
+#navMenu li{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: larger;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navMenu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 18%;
+    min-width: max-content;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+#navMenu a:hover {
+    background-color: #ffffff95;
+}
+
+#logon{
+    /* float: right; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    height: 100%;
+}
+
+#logon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}   
+
+#navBar img{
+    margin-left: 3%;
+    max-height: 95%;
+    width: 20%;
+    /* height: min-content; */
+}
+
+
+@media screen and (max-width : 850px) {    
+    .nav{
+        width : 100%;
+        height: 8vh;
+    }
+    
+    #navBar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    #navBar img{
+        width: 20%;
+        margin-top: 0%;
+    }
+    
+    #navBar #navMenu{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navMenu li{
+        width: 100%;
+        height: 100%;
+        font-size: 1em;
+    }
+
+    #navMenu ul{
+        height: 100%;
+        width: 80%;
+    }
+
+    #navMenu a{
+        height: 100%;
+        /* width: 20%; */
+    }
+
+    #logon{
+        /* width: 20%; */
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width : 400px){
+    .nav{
+        width : 100%;
+        height: 5vh;
+    }
+    
+    #navBar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    #navBar img{
+        width: 20%;
+        margin-top: 0%;
+    }
+    
+    #navMenu{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navMenu li{
+        width: 100%;
+        height: 100%;
+        font-size: 0.5em;
+    }
+   
+}

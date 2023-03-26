@@ -1,0 +1,278 @@
+@font-face {
+    font-family: HyWenHei;
+    src: url("Assets/hywenhei-cufonfonts/zhcn.ttf");
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* w ubah ini */
+.accordion{
+    font-family : HyWenHei;
+    width:100%;
+}
+/* w ubah ini */
+.accordion li{
+    list-style: none;
+    width: 100%;
+    background: #e3edf7;
+}
+.accordion .mond{
+    list-style: none;
+    width: 100%;
+}
+.accordion .liyue{
+    list-style: none;
+    width: 100%;    
+}
+.accordion .inazuma{
+    list-style: none;
+    width: 100%;
+
+}
+.accordion .sumeru{
+    list-style: none;
+    width: 100%;
+
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 50px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.accordion .mond label#monds{
+    width: 100%;
+    height: 100%;
+    background-image: url("Assets/Header/Mondstadt.jpg"); 
+    background-size: cover;
+}
+.accordion .mond label#monds:hover{
+    transition: 1s ease;
+    color: white;
+    text-shadow: 2px 2px 10px #09e993;
+}
+
+.accordion .liyue label#iyue{
+    width: 100%;
+    height: 100%;
+    background-image: url("Assets/Header/Liyue.jpg"); 
+    background-size: cover;
+}
+.accordion .liyue label#iyue:hover{
+    transition: 1s ease;
+    color: white;
+    text-shadow: 2px 2px 10px #ff9100;
+}
+
+
+
+.accordion .inazuma label#zuma{
+    width: 100%;
+    height: 100%;
+    background-image: url("Assets/Header/Inazuma.jpg"); 
+    background-size: cover;
+}
+.accordion .inazuma label#zuma:hover{
+    transition: 1s ease;
+    color: white;
+    text-shadow: 2px 2px 10px #a600ff;
+}
+.accordion .sumeru label#meru{
+    width: 100%;
+    height: 100%;
+    background-image: url("Assets/Header/Sumeru.jpg"); 
+    background-size: cover;
+}
+.accordion .sumeru label#meru:hover{
+    transition: 1s ease;
+    color: white;
+    text-shadow: 2px 2px 10px #04f700;
+}
+
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    color: #000;
+    /* padding: 0 10px; */
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-width: 100vw;
+    max-height: 100vh;
+    /* margin: 10px 10px 20px; */
+    /* background-color: red; */
+}
+
+/* .accordion input[type="radio"]:checked + label::before{
+    content:'-';
+}
+ */
+
+
+
+ /* buat perlogo logoan di dalem gameabout */
+#panahkiri{
+    /* margin-right: 50px; */
+    /* align-items: end; */
+    float: left;
+    width: auto;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+#panahkanan{
+    /* margin-left: 50px; */
+    float: right;
+    width: auto;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transform: scale(-1, -1);
+
+}
+
+
+.game-content .header-country{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* padding-top: 60px;      */
+    font-size: 35px;
+    width: 100%;
+    color: aliceblue;
+    /* x, y , blur radius */
+    text-shadow: 1px 1px 10px #000000; 
+
+}
+
+
+.game-content .header-country .logo img{
+    width: 156px;
+    height: 156px;
+}
+
+.desc{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: fit-content;
+    
+}
+
+.mond .content {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    background-image: url("Assets/Background/Mondstadt.jpg");
+    background-size: cover;
+}
+
+.liyue .content {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Assets/Background/Liyue.jpg");
+    background-size: cover;
+}
+
+.inazuma .content {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Assets/Background/Inazuma.jpg");
+    background-size: cover;
+}
+
+.sumeru .content {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Assets/Background/Sumeru.jpg");
+    background-size: cover;
+}
+
+
+.game-content .desc .textdesc{
+    /* display: flex; */
+    width: 70vw;
+    height: auto;
+    color: whitesmoke;
+    padding: 10px;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+    /* opacity: 0.2; */
+    /* left: 50%; */
+}
+
+.game-content .desc .textdesc .headerdesc h1{
+    padding: 25px;
+    text-align: center;
+}
+.game-content .desc .textdesc p{
+    text-align: center;
+}
+
+.game-content{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width : 800px){
+    .game-content .header-country{
+        scale: 0.8;
+    }
+    .game-content .desc .textdesc .headerdesc h1{
+        font-size: 2em;
+    }
+    .game-content .desc .textdesc p{
+        font-size: 0.8em;
+    }
+    .accordion .mond label#monds{
+        background-position: center;
+    }
+
+    
+    .accordion .liyue label#iyue{
+        background-position: center;
+    }
+
+    
+    .accordion .inazuma label#zuma{
+        background-position: center;
+    }
+
+    .accordion .sumeru label#meru{
+        background-position: center;
+    }
+
+    
+    
+}
+@media screen and (max-width : 400px){
+    .game-content .header-country{
+        scale: 0.6;
+    }
+    .game-content .desc .textdesc .headerdesc h1{
+        padding: 0 0 10px 0;
+        font-size: 1.5em;
+    }
+    .game-content .desc .textdesc p{
+        font-size: 0.6em;
+        width: fit-content;
+    }
+
+}

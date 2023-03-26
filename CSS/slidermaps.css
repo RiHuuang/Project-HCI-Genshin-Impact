@@ -1,0 +1,168 @@
+.section{
+    margin-top: 20px;
+    width: 100vw;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+ }
+ 
+ .sliderbwh{
+    /* border-radius: 10px; */
+    width: 320px;
+    height: 177.5px;
+    overflow: hidden;
+ }
+ 
+ .slidebwh input{
+    display: none;
+ }
+ 
+ .slidebwh{
+    width: 400%;
+    height: 177.5px;
+    display: flex;
+ }
+ 
+ .st{
+    width: 25%;
+    transition: 2s;
+ }
+ 
+ .st img{
+    width: 320px;
+    height: 177.5px;
+ }
+ 
+ .nav-m{
+    position: absolute;
+
+    width: 320px;
+    margin-top: -40px;
+    justify-content: center;
+    display: none;
+    
+    
+ }
+ 
+ .m-btn{
+    border: 3px solid black;
+    padding: 5px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    transition: 1s;
+    
+ 
+ }
+ 
+ .m-btn:not(:last-child){
+    margin-right: 30px;
+ }
+ 
+ .mbtn:hover{
+    background-color: white;
+ }
+ #radio1:checked ~.first{
+    margin-left:0;
+ }
+ #radio2:checked ~.first{
+    margin-left:-25%;
+ }
+ #radio3:checked ~.first{
+    margin-left:-50%;
+ }
+ #radio4:checked ~.first{
+    margin-left:-75%;
+ }
+
+
+ #radio1mondstadt:checked ~.first{
+    margin-left:0;
+ }
+ #radio2mondstadt:checked ~.first{
+    margin-left:-25%;
+ }
+ #radio3mondstadt:checked ~.first{
+    margin-left:-50%;
+ }
+ #radio4mondstadt:checked ~.first{
+    margin-left:-75%;
+ }
+ 
+
+
+ #radio1liyue:checked ~.first{
+    margin-left:0;
+ }
+ #radio2liyue:checked ~.first{
+    margin-left:-25%;
+ }
+ #radio3liyue:checked ~.first{
+    margin-left:-50%;
+ }
+ #radio4liyue:checked ~.first{
+    margin-left:-75%;
+ }
+
+
+ #radio1inazuma:checked ~.first{
+    margin-left:0;
+ }
+ #radio2inazuma:checked ~.first{
+    margin-left:-25%;
+ }
+ #radio3inazuma:checked ~.first{
+    margin-left:-50%;
+ }
+ #radio4inazuma:checked ~.first{
+    margin-left:-75%;
+ }
+
+ 
+ #radio1sumeru:checked ~.first{
+    margin-left:0;
+ }
+ #radio2sumeru:checked ~.first{
+    margin-left:-25%;
+ }
+ #radio3sumeru:checked ~.first{
+    margin-left:-50%;
+ }
+ #radio4sumeru:checked ~.first{
+    margin-left:-75%;
+ }
+  
+ .nav-auto{
+    position: absolute;
+    width: 320px;
+    margin-top: 460px;
+    display: none;
+    justify-content: center;
+ }
+ 
+ .nav-auto div{
+    border: 3px solid black;
+    padding: 5px;
+    /* border-radius:  10px; */
+    transition: 1s;
+ 
+ }
+ 
+ .nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+
+ }
+ 
+ @media screen and (max-width : 800px){
+   .section{
+      margin-top: 5px;
+      scale: 0.7;
+   }
+ }
+ @media screen and (max-width : 400px){
+   .section{
+      scale: 0.5;
+   }
+ }

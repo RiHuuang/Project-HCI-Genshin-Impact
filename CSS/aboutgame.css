@@ -8,11 +8,12 @@ html {
     background-image: url("Assets/Background/Update\ miko.jpg");
     background-size: cover;
     background-position: center;
-    height: calc(340px + 30vw);
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
+    background-position: 25%;
 }
 
 .available .availtext{
@@ -236,7 +237,15 @@ html {
     height: 500px;
 }
 
-@media screen and (max-width : 800px){
+@media screen and (max-width : 850px){
+
+    .available .availtext{
+        height: 50%;
+        width: 100%;
+        margin-bottom: 0;
+        /* background-color:aqua ; */
+    }
+
 
     .overlay{
         scale: 0.8;
@@ -310,43 +319,43 @@ html {
     }
 
     .gameabout .header-gameplay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;     
-    font-size: 2em;
-    width: 100%;
-    color: aliceblue;
-    /* x, y , blur radius */
-    text-shadow: 1px 1px 10px #000000; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;     
+        font-size: 2em;
+        width: 100%;
+        color: aliceblue;
+        /* x, y , blur radius */
+        text-shadow: 1px 1px 10px #000000; 
 
-}
+    }
 
-.gameabout .header-gameplayFeat{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;     
-    font-size: 35px;
-    width: 100%;
-    color: aliceblue;
-    /* x, y , blur radius */
-    text-shadow: 1px 1px 10px #000000; 
+    .gameabout .header-gameplayFeat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;     
+        font-size: 35px;
+        width: 100%;
+        color: aliceblue;
+        /* x, y , blur radius */
+        text-shadow: 1px 1px 10px #000000; 
 
-}
+    }
 
-.gameabout .header-gameplayScreenshot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;     
-    font-size: 35px;
-    width: 100%;
-    color: aliceblue;
-    /* x, y , blur radius */
-    text-shadow: 1px 1px 10px #000000; 
+    .gameabout .header-gameplayScreenshot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;     
+        font-size: 35px;
+        width: 100%;
+        color: aliceblue;
+        /* x, y , blur radius */
+        text-shadow: 1px 1px 10px #000000; 
 
-}
+    }
     
     
     .epic-img{
@@ -411,7 +420,7 @@ html {
     }
 
     #panahkiri{
-        margin-right: 50px;
+        margin-right: 30px;
         float: left;
         width: auto;
         height: 10px;
@@ -420,7 +429,7 @@ html {
     }
     
     #panahkanan{
-        margin-left: 50px;
+        margin-left: 30px;
         float: right;
         width: auto;
         height: 10px;
@@ -432,22 +441,192 @@ html {
 }
 @media screen and (max-width : 400px){
 
-
-
-    .gameabout{
-        width: 380px;
+    .gameFeatures-kiri{
+        display: flex;
+        /* background-color: red; */
+        align-items: center;
+        justify-content: center;
+        margin: 200px 0 0 0 ;
     }
-    .available .availtext{
-        width: 100%;
-    }
-
-    .slider{
-        transform: scale(0.5);
-    }
-    /* .slider label */
     
-    iframe {
-        width: 300px;
-        height: 200px;
+    .gameFeatures-kanan{
+        display: flex;
+        /* background-color: red; */
+        align-items: center;
+        justify-content: center;
+        margin: 200px 0 0 0 ;
+    }
+
+    .overlay{
+        scale: 0.8;
+    }
+    
+    .overlay p{
+        padding: 0 5%;
+    }
+    .textbg-kiri{
+        scale: 0.5;
+        margin-left: 0;
+        margin-bottom: 350px;
+    } 
+    
+    .textbg-kanan{
+        scale: 0.5;
+        margin-right: 0;
+        margin-bottom: 350px;
+       
+    } 
+    #panahkiri{
+        margin-right: 50px;
+        float: left;
+        width: auto;
+        height: 3px;
+        margin-top: 10px;
+    
+    }
+    
+    #panahkanan{
+        margin-left: 50px;
+        float: right;
+        width: auto;
+        height: 3px;
+        margin-top: 10px;
+        transform: scale(-1, -1);
+    
+    }
+
+    .gameabout .header-gameplay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;     
+        width: 100%;
+        color: aliceblue;
+        text-shadow: 1px 1px 10px #000000; 
+        text-align: center;
+        
+    }
+    .gameabout .header-gameplay h1{
+        font-size: 1em;  
+        text-align: center;
+
+    }
+    
+    .gameabout .header-gameplayFeat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;     
+        font-size: 1em;
+        width: 100%;
+        color: aliceblue;
+        text-shadow: 1px 1px 10px #000000; 
+        text-align: center;
+    
+    }
+    /* .gameabout .header-gameplayFeat h1{
+        font-size: 1em;
+    } */
+    
+    .gameabout .header-gameplayScreenshot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;     
+        font-size: 1em;
+        width: 100%;
+        color: aliceblue;
+        text-shadow: 1px 1px 10px #000000; 
+        text-align: center;
+    }
+
+    .gameabout .header-gameplayScreenshot h1{
+        font-size: 1em;
+    }
+
+    .gameabout .header-gameplay{   
+        font-size: 1em;
+    }
+
+ 
+    
+    
+    .epic-img{
+        display: flex;
+        margin-right: 0;
+        width: 250px;
+        height: 150px;
+    }
+    
+    .epic-img img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .master-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .master-img{
+        display: flex;
+        margin-right: 0;
+        width: 250px;
+        height: 150px;
+    }
+    
+    .genshinView-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .genshinView-img {
+        display: flex;
+        margin-right: 0;
+        width: 250px;
+        height: 150px;
+    }
+    
+    .playTogether-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .playTogether-img {
+        display: flex;
+        margin-right: 0;
+        width: 250px;
+        height: 150px;
+    }
+    
+    .dream-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .dream-img{
+        display: flex;
+        margin-right: 0;
+        width: 250px;
+        height: 150px;
+    } 
+
+    #panahkiri{
+        margin-right: 15px;
+        float: left;
+        width: auto;
+        height: 3px;
+        margin-top: 10px;
+    
+    }
+    
+    #panahkanan{
+        margin-left: 15px;
+        float: right;
+        width: auto;
+        height: 3px;
+        margin-top: 10px;
+        transform: scale(-1, -1);
     }
 }

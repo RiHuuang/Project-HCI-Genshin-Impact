@@ -349,7 +349,7 @@ section .description .desc #bullet{
     text-align: center;
 }
 
-.charkecil .namachar:hover{
+.charkecil:hover .namachar{
     background-color: white;
     color: black;
 }
@@ -377,6 +377,7 @@ section .description .desc #bullet{
     }
 
     .backdrop{
+        width: 100vw;
         background-position-x: 50%;
         background-size: cover;
         /* object-fit: cover; */
@@ -384,10 +385,12 @@ section .description .desc #bullet{
 
     .container{
         height: 100vh;
+        width: 100vw;
     }
 
     .carousel{
         height: 100vh;
+        width: 100vw;
         overflow: visible;
     }
 
@@ -396,7 +399,7 @@ section .description .desc #bullet{
         align-self: end;
         align-items: center;
         justify-content: center;
-        margin-bottom: 15%;
+        margin-bottom: 10.4vh;
         width: 100%;
         height: max-content;
         background-color: #000000bb;
@@ -442,7 +445,7 @@ section .description .desc #bullet{
         justify-content: start;
         align-items: end;
         height: 100vh;
-        width: 300%;
+        width: 300vw;
         overflow: visible;
     }
 
@@ -571,7 +574,7 @@ section .description .desc #bullet{
     }
     
     .maps-control{
-        margin-bottom: 3%;
+        margin-bottom: 3vh;
         z-index: 5;
         background: #000000aa;
         display: flex;

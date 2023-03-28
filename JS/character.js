@@ -17,6 +17,7 @@ const charkecil3 = document.getElementById("charkecil3")
 var direction = 0;
 // ini buat ngeinitialize di gambar orang pertama
 nama1.classList.add('hidup');
+charkecil1.classList.add("hidup");
 
 
 charkecil1.addEventListener("click", () => {

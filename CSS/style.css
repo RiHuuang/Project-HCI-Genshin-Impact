@@ -279,6 +279,10 @@ body{
         background-size: cover;
     }
     
+    .homes #downloads a{
+        opacity: 100%;
+    }
+
     .newSemua .headerdaun{
         background-size: cover;
         /* height: 20%; */
@@ -332,6 +336,10 @@ body{
     
     .newSemua .headerdaun{
         height: 20%;
+    }
+
+    .homes #downloads a{
+        opacity: 100%;
     }
 
     #rilis{

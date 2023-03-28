@@ -48,7 +48,7 @@
     font-size: 50px;
     font-weight: 500;
     cursor: pointer;
-    color: #d9d8d8;
+    color: whitesmoke;
 }
 .accordion .mond label#monds{
     width: 100%;
@@ -165,8 +165,8 @@ input[type="radio"]{
 
 
 .game-content .header-country .logo img{
-    width: 156px;
-    height: 156px;
+    width: 18vh;
+    height: 18vh;
 }
 
 .desc{

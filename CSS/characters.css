@@ -287,6 +287,7 @@ section .description .desc #bullet{
     align-self: flex-end;
 }
 
+
 #prev{
     cursor: pointer;
     margin-left: calc(100vw / 4);
@@ -314,6 +315,9 @@ section .description .desc #bullet{
     align-items: center;
     overflow-x: hidden;
 }
+.controls .charkecil:hover{
+    background-color: grey;
+}
 
 .charkecil img{
     width: 100%;
@@ -325,6 +329,18 @@ section .description .desc #bullet{
     font-family: Tahoma;
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.charkecil .namachar.hidup{
+    font-family: Tahoma;
+    background-color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,16 +4,62 @@ const prev = document.getElementById("prev")
 const next = document.getElementById("next")
 const maps = document.getElementById("drop-up")
 const mapsnav = document.querySelector('.mapsnav')
+// const charkecil = document.querySelector('.charkecil')
+// const namechar = document.querySelector('.namachar')
+const nama1 = document.getElementById("nama1")
+const nama2 = document.getElementById("nama2")
+const nama3 = document.getElementById("nama3")
+const charkecil1 = document.getElementById("charkecil1")
+const charkecil2 = document.getElementById("charkecil2")
+const charkecil3 = document.getElementById("charkecil3")
 
-
-//problemnya adalah saat dia di pnecet geser dia merubah ukuran description nya
 
 var direction = 0;
+// ini buat ngeinitialize di gambar orang pertama
+nama1.classList.add('hidup');
+
+
+charkecil1.addEventListener("click", () => {
+  direction = 0;
+  slider.style.transform = "translateX(0)";
+  nama1.classList.add("hidup");
+  nama2.classList.remove("hidup");
+  nama3.classList.remove("hidup");
+});
+charkecil2.addEventListener("click", () => {
+  direction = 1;
+  slider.style.transform = "translateX(-33.333333%)";
+  nama1.classList.remove("hidup");
+  nama2.classList.add("hidup");
+  nama3.classList.remove("hidup");
+});
+charkecil3.addEventListener("click", () => {
+  direction = 2;
+  slider.style.transform = "translateX(-66.666666%)";
+  nama1.classList.remove("hidup");
+  nama2.classList.remove("hidup");
+  nama3.classList.add("hidup");
+});
 
 function updateContent() {
-    if(direction == 0) slider.style.transform = 'translateX(0)';
-    if(direction == 1) slider.style.transform = 'translateX(-33.333333%)';
-    if(direction == 2) slider.style.transform = 'translateX(-66.666666%)';
+    if(direction == 0) {
+        slider.style.transform = 'translateX(0)';
+        nama1.classList.add('hidup');
+        nama2.classList.remove('hidup');
+        nama3.classList.remove('hidup');
+    }
+    if(direction == 1) {
+        slider.style.transform = 'translateX(-33.333333%)';
+        nama1.classList.remove('hidup');
+        nama2.classList.add('hidup');
+        nama3.classList.remove('hidup');
+    }
+    if(direction == 2) {
+        slider.style.transform = 'translateX(-66.666666%)';
+        nama1.classList.remove('hidup');
+        nama2.classList.remove('hidup');
+        nama3.classList.add('hidup');
+    }
 }
 
 prev.addEventListener('click', function() {
@@ -57,19 +103,6 @@ let width = screen.width;
 
 //Richard ubah, 
 
-// maps.addEventListener('click', function(){
-//     count++;
-//     console.log("dipencet " + count);
-//     if(count % 2 == 1) mapsnav.style.display = "flex";
-//     else {
-//         if (width > 350){
-//             mapsnav.style.display = "flex";
-            
-//         }
-//         mapsnav.style.display = "none";
-//     }
-    
-// })
 
 maps.addEventListener('click', function(){
     count++;

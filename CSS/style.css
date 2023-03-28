@@ -39,6 +39,11 @@ body{
 
 .homes #downloads a{
     margin: 5px;
+    opacity: 65%;
+}
+
+.homes #downloads a:hover{
+    opacity: 100%;
 }
 
 .pembungkus-home{

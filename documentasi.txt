@@ -1,2 +1,20 @@
+# Sumber Asset
 webstatic.hoyoverse
 https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1d75f02f-da4d-43f7-bb0a-2c049d2b0697/deofybq-28af2ea6-9bce-42af-8e5f-13ffa7e0be15.png/v1/fill/w_1192,h_670,q_70,strp/genshin_impact_screenshot_wallpaper_ps4_by_thesupport_deofybq-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMWQ3NWYwMmYtZGE0ZC00M2Y3LWJiMGEtMmMwNDlkMmIwNjk3XC9kZW9meWJxLTI4YWYyZWE2LTliY2UtNDJhZi04ZTVmLTEzZmZhN2UwYmUxNS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.571pWEyJ2PnoGiUGncBP6p17BHbNXHvM4v_2RIhJoPk
+https://lovepik.com/image-400183451/leaf-material.html
+https://lovepik.com/image-400225513/fresh-plants-materials.html
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fmdjsn%2Fart%2FGenshin-Impact-Golden-House-Stage-DL-866756925&psig=AOvVaw3IO2wVLRxUc97uwUt_-Ma3&ust=1680097954561000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCMDWteLi_v0CFQAAAAAdAAAAABAI
+https://www.google.com/url?sa=i&url=https%3A%2F%2F4kwallpapers.com%2Fanime%2Fgenshin-impact-lumine-5k-8k-5163.html&psig=AOvVaw2InSd0qVacHLp-CdMHCqNF&ust=1680098036623000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCNCqv4jj_v0CFQAAAAAdAAAAABAE
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gamepur.com%2Fguides%2Fall-mondstadt-geography-archive-viewpoint-locations-in-genshin-impact&psig=AOvVaw2JHDAWFjnY-Ct8PZkUGzVU&ust=1680098178385000&source=images&cd=vfe&ved=0CBEQjhxqFwoTCOCu4srj_v0CFQAAAAAdAAAAABAE
+https://lovepik.com/images/leaf-border.html
+https://www.cufonfonts.com/font/hywenhei #font HyWenei
+
+#Referensi
+https://genshin.hoyoverse.com
+
+#Sumber Belajar
+https://www.w3schools.com/howto/howto_css_overlay.asp
+https://www.youtube.com/watch?v=p1GmFCGuVjw&ab_channel=Codehal
+https://www.youtube.com/watch?v=1CZhGDU5cWM&ab_channel=AnnaBlok%E2%80%94FrontendTutorial
+https://www.youtube.com/watch?v=0wvrlOyGlq0&
+https://www.youtube.com/watch?v=3i7vsWGlU90&

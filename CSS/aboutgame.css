@@ -79,6 +79,7 @@ html {
     width: 100%;
     color: aliceblue;
     /* x, y , blur radius */
+    margin-bottom: 5vh;
     text-shadow: 1px 1px 10px #000000; 
 
 }

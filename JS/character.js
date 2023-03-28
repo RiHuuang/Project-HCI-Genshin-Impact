@@ -25,20 +25,30 @@ charkecil1.addEventListener("click", () => {
   nama1.classList.add("hidup");
   nama2.classList.remove("hidup");
   nama3.classList.remove("hidup");
+  charkecil1.classList.add("hidup");
+  charkecil2.classList.remove("hidup");
+  charkecil3.classList.remove("hidup");
+  
 });
 charkecil2.addEventListener("click", () => {
-  direction = 1;
-  slider.style.transform = "translateX(-33.333333%)";
-  nama1.classList.remove("hidup");
-  nama2.classList.add("hidup");
-  nama3.classList.remove("hidup");
+    direction = 1;
+    slider.style.transform = "translateX(-33.333333%)";
+    nama1.classList.remove("hidup");
+    nama2.classList.add("hidup");
+    nama3.classList.remove("hidup");
+    charkecil1.classList.remove("hidup");
+    charkecil2.classList.add("hidup");
+    charkecil3.classList.remove("hidup");
 });
 charkecil3.addEventListener("click", () => {
-  direction = 2;
-  slider.style.transform = "translateX(-66.666666%)";
-  nama1.classList.remove("hidup");
-  nama2.classList.remove("hidup");
-  nama3.classList.add("hidup");
+    direction = 2;
+    slider.style.transform = "translateX(-66.666666%)";
+    nama1.classList.remove("hidup");
+    nama2.classList.remove("hidup");
+    nama3.classList.add("hidup");
+    charkecil1.classList.remove("hidup");
+    charkecil2.classList.remove("hidup");
+    charkecil3.classList.add("hidup");
 });
 
 function updateContent() {
@@ -47,18 +57,27 @@ function updateContent() {
         nama1.classList.add('hidup');
         nama2.classList.remove('hidup');
         nama3.classList.remove('hidup');
+        charkecil1.classList.add("hidup");
+        charkecil2.classList.remove("hidup");
+        charkecil3.classList.remove("hidup");
     }
     if(direction == 1) {
         slider.style.transform = 'translateX(-33.333333%)';
         nama1.classList.remove('hidup');
         nama2.classList.add('hidup');
         nama3.classList.remove('hidup');
+        charkecil1.classList.remove("hidup");
+        charkecil2.classList.add("hidup");
+        charkecil3.classList.remove("hidup");
     }
     if(direction == 2) {
         slider.style.transform = 'translateX(-66.666666%)';
         nama1.classList.remove('hidup');
         nama2.classList.remove('hidup');
         nama3.classList.add('hidup');
+        charkecil1.classList.remove("hidup");
+        charkecil2.classList.remove("hidup");
+        charkecil3.classList.add("hidup");
     }
 }
 

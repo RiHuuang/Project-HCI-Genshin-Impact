@@ -11,7 +11,7 @@
 }
 
 .sliderbwh{
-   width: 500px;
+   width: 400px;
    height: auto;
    overflow: hidden;
 }
@@ -32,14 +32,14 @@
 }
 
 .st img{
-   width: 500px;
+   width: 400px;
    height: auto;
 }
 
 .nav-m{
    position: absolute;
 
-   width: 500px;
+   width: 400px;
    margin-top: -40px;
    justify-content: center;
    display: none;

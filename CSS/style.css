@@ -38,7 +38,7 @@ body{
 }
 
 .homes #downloads a{
-    margin: 5px;
+    margin: 2%;
     opacity: 65%;
 }
 
@@ -116,20 +116,6 @@ body{
     align-items: center;
     justify-content: center;
     padding: 20px;
-}
-
-
-#appstore{
-    width: 18vw;
-}
-
-#gplay{
-    margin-left: 6px;
-    width: 20vw;
-}
-
-#windows{
-    width: 20vw;
 }
 
 .newSemua .headerdaun .isi{
@@ -270,6 +256,7 @@ body{
 .daunbawh img{
     width: 100%;
     height: 50%;
+    object-fit: cover;
 }
 
 

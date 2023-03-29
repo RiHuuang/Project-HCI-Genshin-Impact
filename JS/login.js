@@ -30,6 +30,8 @@ const loginSubmit = document.getElementById("login-btn")
 const registerError = document.getElementById("registerError")
 const loginError = document.getElementById("loginError")
 const tnc = document.getElementById("tnc")
+const regform = document.getElementById("regform")
+const logform = document.getElementById("logform")
 
 const asynchronous = document.getElementById("asynchronous")
 
@@ -54,6 +56,7 @@ registerSubmit.addEventListener("click", (event)=>{
     console.log(confirmpassword);
     console.log(email);
     
+    var boolCheck = false;
 
     if(Age < 17 ){
         errorText = "The age doesn't fulfill the requirement"
@@ -78,8 +81,14 @@ registerSubmit.addEventListener("click", (event)=>{
         console.log('Checkbox is checked:', isChecked);
     });
 
+    if(isChecked == false){
+        errorText = "Must accept Terms n Condition"
+    }
+
 
     registerError.innerText = errorText;
+
+    form.submit();
 
 })
 
@@ -109,6 +118,7 @@ loginSubmit.addEventListener("click", (event)=>{
     loginError.innerText = errorText;
     // console.log(divError.innerText);
     
+    form.submit();
 })
 
 

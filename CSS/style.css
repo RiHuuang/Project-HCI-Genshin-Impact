@@ -45,7 +45,19 @@ body{
 .homes #downloads a:hover{
     opacity: 100%;
 }
+.homes .logjen{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: -500px;
+    opacity: 0.75;
+}
 
+.logjen img{
+    width: 100%;
+
+}
 .pembungkus-home{
     position: absolute;
     width: 100%;
